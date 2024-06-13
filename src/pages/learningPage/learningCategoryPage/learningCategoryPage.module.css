@@ -1,0 +1,101 @@
+.LearningCategoryPage {
+  background-image: url("./../../../assets/cameraPage/cameraPageBg.png");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  padding: 5vw 0;
+  gap: 4vw;
+  justify-content: flex-start !important;
+  .logoContainer {
+    width: 60vw;
+  }
+  .bottom {
+    gap: 8vw;
+
+    .categories {
+      width: 100vw;
+      flex-wrap: wrap;
+      gap: 5vw;
+      .singleContainer {
+        gap: 3vw;
+        .imgContainer {
+          width: 42vw;
+          border-radius: 4vw;
+          border: 0.5vw solid var(--themeColor1);
+          img {
+            border-radius: 4vw;
+          }
+        }
+        .txt {
+        }
+        .btn {
+          width: 30vw;
+        }
+        .videoContainer {
+          background-color: rgba(0, 0, 0, 0.4);
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          .closeContainer {
+            font-size: 10vw;
+            position: absolute;
+            top: 50vw;
+            right: 5vw;
+            color: #fff;
+          }
+          video {
+            width: 90vw;
+          }
+        }
+      }
+    }
+
+    .homeBtn {
+      position: absolute;
+      width: 15vw;
+      right: 5vw;
+      bottom: 5vw;
+    }
+  }
+}
+
+.learningCategoryDiffPage {
+  gap: 0;
+  .bottom {
+    gap: 2vw;
+    .categories {
+      gap: 3vw;
+      .singleContainer {
+        gap: 1vw;
+      }
+    }
+  }
+}
+
+.learningCategoryAfterPage {
+  .bottom {
+    .categories {
+      .singleContainer {
+        gap: 5vw;
+        .imgContainer {
+          width: 80vw;
+        }
+        .txt {
+          font-size: 4.2vw;
+        }
+        .btn {
+          color: #fff;
+          width: 70vw;
+          font-size: 6vw;
+          font-weight: 600;
+          padding: 2vw 4vw;
+          border-radius: 6vw;
+          background-color: var(--themeColor1);
+          box-shadow: 1vw 1vw 1vw rgba(0, 0, 0, 0.7);
+        }
+      }
+    }
+  }
+}

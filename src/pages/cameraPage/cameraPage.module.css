@@ -1,0 +1,68 @@
+.CameraPage {
+  background-image: url("./../../assets/cameraPage/cameraPageBg.png");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  padding: 10vw 0;
+  gap: 10vw;
+  justify-content: flex-start !important;
+  .logoContainer {
+    width: 60vw;
+  }
+
+  .bottom {
+    gap: 8vw;
+
+    .main {
+      width: 75vw;
+      border: 0.6vw solid var(--themeColor1);
+      border-radius: 3vw;
+      .webcamParent {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--themeColor1);
+        border-radius: 3vw;
+        #webcam {
+          width: 100%;
+          border-radius: 3vw;
+        }
+        .capturedImage {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          border-radius: 3vw;
+        }
+      }
+    }
+
+    .footer {
+      .foot {
+        gap: 5vw;
+      }
+    }
+
+    .preparingImgContainer {
+      width: 80vw;
+      height: 80vw;
+    }
+
+    .loader {
+      margin-top: 10vw;
+      width: 90vw;
+      height: 4vw;
+      border-radius: 10vw;
+      background: linear-gradient(var(--themeColor1) 0 0) 0/0% no-repeat #ccc;
+      animation: l2 5s infinite steps(10);
+    }
+  }
+}
+@keyframes l2 {
+  100% {
+    background-size: 110%;
+  }
+}

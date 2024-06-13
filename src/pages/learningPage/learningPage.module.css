@@ -1,0 +1,45 @@
+.LearningPage {
+  height: 100vh;
+  padding-top: 10vw;
+  gap: 5vw;
+  justify-content: flex-start !important;
+  background-image: url("./../../assets/learningPage/learningPageBg.png");
+  background-position: center;
+  background-size: cover;
+  .logoContainer {
+    width: 60vw;
+  }
+  .bottom {
+    gap: 3vw;
+    .title {
+      gap: 1vw;
+    }
+    .categories {
+      flex-wrap: wrap;
+      gap: 6vw;
+      .singleContainer {
+        gap: 2vw;
+        .imgContainer {
+          width: 42vw;
+          border-radius: 4vw;
+          border: 0.5vw solid var(--themeColor1);
+          img {
+            border-radius: 4vw;
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    margin-top: auto;
+    background-color: #fff;
+    justify-content: space-between;
+    .leftContainer {
+      width: 50%;
+      gap: 2vw;
+    }
+    .imgContainer {
+      width: 40%;
+    }
+  }
+}

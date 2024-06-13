@@ -1,0 +1,43 @@
+.OutputPage {
+  background-image: url("./../../assets/outputPage/outputPageBg.png");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  padding: 10vw 0;
+  gap: 10vw;
+  justify-content: flex-start !important;
+
+  .logoContainer {
+    width: 60vw;
+  }
+
+  .bottom {
+    gap: 9vw;
+    .h1 {
+      font-size: 7vw;
+    }
+    .generatedImgContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10vw;
+      .imgContainer {
+        width: 75vw;
+        border: 0.6vw solid var(--themeColor1);
+        border-radius: 3vw;
+        img {
+          border-radius: 2.5vw;
+        }
+      }
+      .btnContainer {
+        gap: 3vw;
+      }
+    }
+  }
+
+  .loader {
+    margin-top: 20vw;
+    width: 70vw;
+  }
+}
